@@ -11,7 +11,7 @@ const express = require('express');
 const app = express();
 
 //request 이벤트 리스너 설정
-//요청이 왔을때 실행할 함수 지정
+//요청이 왔을때 실행할 함수 지정(get, post, delete 등등)
 app.use((request, response) => { // request는 받아오는값, response는 보내는 값
     //화면에 아래의 html 태그를 출력
     response.send('<h1>Hello express</h1>')
